@@ -1,31 +1,16 @@
-# Cartoonstrike-Fly
-You can fly in cartoonstrike
-var mc7,
-    tBJ,
-    up = true;
+###  Cartoon Strike
+- Run a cheat after extracting files, then open a game.
 
-function defineMc7() {
-    mc7 = Main.children[7];
+- Open Cartoon Strike and Press Space .
 
-    if(mc7.s38 === null) setTimeout(defineMc7, 50);
-    else tBJ = mc7.s38.b33.tBJ;
-}
-defineMc7();
+- Fly
 
-function fly(e) {
-    var state = (e.type == "keydown") ?true: false;
+- Noclip
 
-    if(e.code == "KeyW") up = state;
+- Speed
 
-    if(up) {
-        tBJ.gravMass = -1;
+- Jump Speed
 
-        mc7.s38.I32 = "jump__in";
-    }
-    if(!up) {
-        tBJ.gravMass = 2;
-         mc7.s38.I32 = "idle";
-    }
-}
-window.addEventListener("keydown", fly);
-window.addEventListener("keyup", fly);
+- TP
+
+- ESP(Wallhack)
